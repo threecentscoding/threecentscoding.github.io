@@ -1,0 +1,5 @@
+There are two ways to do this problem. One observation is to convert the number to base 10, multiply by 17, and then convert to base 2 again. We can also conceptually notice that 
+
+                                                17N = 16N + N
+                                                
+where N is the input number. We see that in binary, 16N is the original number N followed by 4 trailing zeros. Once we add this to the original number, we will have the answer.
