@@ -13,6 +13,7 @@ public class Times17
             int k = Integer.parseInt(st.nextToken());
             k = Integer.parseInt(""+k, 2) * 17; 
             System.out.println(Integer.toBinaryString(k)); 
-            out.println(Integer.toBinaryString(k)); out.close();
+            out.println(Integer.toBinaryString(k)); 
+            out.close();
       }
 }
