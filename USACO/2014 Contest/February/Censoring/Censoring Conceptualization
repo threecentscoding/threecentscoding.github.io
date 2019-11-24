@@ -1,3 +1,1 @@
-This problem becomes trivial once we realize that we are looping throught the string and removing the same substring every time we go through. 
-
-We can use Java's replaceAll() to replace the removable substring with the empty string, and then continue until the removable substring is not found.
+This problem becomes trivial once we realize that we are looping throught the string and removing the same substring every time we go through. We can use Java's replaceAll() to replace the removable substring with the empty string, and then continue until the removable substring is not found.
