@@ -1,1 +1,12 @@
+Because the string length can be as large as 10^5, writing three for loops to manually count every instance of the word COW will be too slow. We won't even be able to have two nested for loops.
+
+Let's imagine looping only once, going across the string from left-to-right. There are three types of sequences that are important to us - the number of times the sequence "C" appears, the number of times the sequence "CO" appears, and the number of times the sequence "COW" appears.
+
+If the next character is a "W", then the number of times "COW" appears increases by the number of instances of the sequence "CO" seen so far.
+
+If the next character is a "O", then the number of times "CO" appears increases by the number of instances of the sequence "C" seen so far.
+
+If the next character is a "C", then the number of times "C" appears increases by 1.
+
+At the end of this process, we simply report how many instances of "COW" we have seen.
 
