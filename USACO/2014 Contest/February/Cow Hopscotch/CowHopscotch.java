@@ -17,12 +17,12 @@ public class CowHopscotch
                   int row = Integer.parseInt(st.nextToken());
                   int col = Integer.parseInt(st.nextToken());
 
-                  grid = new char[r][c];
-                  for(int i = 0; i < r; i++) 
+                  grid = new char[row][col];
+                  for(int i = 0; i < row; i++) 
                   {
                       String color = br.readLine();
             
-                      for(int j = 0; j < c; j++) 
+                      for(int j = 0; j < col; j++) 
                       {
                           grid[i][j] = color.charAt(j);
                       }
@@ -39,19 +39,19 @@ public class CowHopscotch
                       return 1;
                   }
           
-                  int ret = 0;
+                  int pathway = 0;
                   for (int i = x+1; i < grid.length; i++) 
                   {
                       for (int j = y+1; j < grid[i].length; j++) 
                       {
                            if(grid[i][j] != grid[x][y]) 
                            {
-                               ret += count(i, j);
+                               pathway += count(i, j);
                            }
                       }
                   }
                 
-                  return ret;
+                  return pathway;
             }
 }
 
