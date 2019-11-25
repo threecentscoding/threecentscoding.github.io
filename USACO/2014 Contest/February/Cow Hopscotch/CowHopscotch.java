@@ -6,8 +6,6 @@ public class CowHopscotch
 {
       static char[][] grid;
   
-      public static void main(String[] args)
-      {   
             public static void main(String[] args) throws IOException 
             {
                   BufferedReader br = new BufferedReader(new FileReader("barnjump.in"));
@@ -46,7 +44,7 @@ public class CowHopscotch
                       {
                            if(grid[i][j] != grid[x][y]) 
                            {
-                               pathway += count(i, j);
+                               pathway += countNumWays(i, j);
                            }
                       }
                   }
